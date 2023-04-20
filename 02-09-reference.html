@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+    const user = { name: 'developer', age: 30 };
+    user.age = 29;
+    console.log(user);
+    
+    const arr = [ 1, 2, 3 ];
+    arr[0] = 10;
+    console.log(arr);
+
+    for(a in arr) {
+      console.log(arr[a])
+    }
+    // 파이썬의 람다map(lambda x: x, arr) 랑 유사함
+    arr.forEach((a) => {
+    console.log(a)
+  })
+  </script>
+
+</body>
+</html>

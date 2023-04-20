@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div id = "result"></div>
+  <script>
+    result = document.querySelector('#result')
+    let count = 5;
+    for (let i = 1; i <= count; i++) {
+      
+      let temp = '';
+
+      for (let j = 1; j <= i; j++) {
+        temp += '*';
+      }
+      result.innerHTML += temp + '<br>' //그냥=만쓰면 누적 안되고 마지막것만 나옴  //br을 써서 줄바꿈해줌
+      console.log(temp);
+    }
+  </script>
+</body>
+
+</html>

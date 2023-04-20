@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!-- 마이 퍼스트 웹 페이지 글씨 클릭시 11 출력 -->
+  <h1 onclick="plus()">My First Web Page</h1>
+  <input type="text">
+  <p>My First Paragraph</p>
+  <p id="demo"></p>
+  <button onclick="ok()">확인</button>
+  <script>
+    function ok() {
+      e = document.querySelector('[type=text]')
+      console.log(e.value)
+      document.querySelector("#demo").innerHTML = e.value
+      
+    }
+    count = 0
+    function plus(){
+      count += 1  //count = count + 1
+            document.querySelector("#demo").innerHTML = count
+    e.value = ''            
+    }
+    // () => {}
+  </script>
+
+</body>
+</html>

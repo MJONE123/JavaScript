@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <p id="demo">text</p>
+  <button type="button" onclick="change()">change</button>
+  <script>
+    function change() {
+      h = document.querySelector('body').innerHTML
+      console.log(h)
+      h2 = document.getElementById("demo").innerHTML = "change"
+      console.log(h2);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>My First Web Page</h2>
+  <p>My first paragraph.</p>
+
+  <button type="button" onclick="openPopup()">팝업</button>
+
+  <button type="button" onclick="closepopup()">계산</button>
+
+  <script>
+    let popup
+
+    function closePopup() {
+      popup.close()
+    }
+    function openPopup() {
+      popup = window.open('https://naver.com','a');
+      // popup.document.write('<h1>Popup</h1>');
+    }
+  </script>
+
+</body>
+</html>
