@@ -24,12 +24,15 @@
   </div>
   <script>
     document.querySelector('div > div:first-child').addEventListener('click', (event) => {
+      event.stopImmediatePropagation()
       console.log('red div');
     });
     document.querySelector('div > div:last-child').addEventListener('click', (event) => {
+      event.stopImmediatePropagation()
       console.log('blue div');
     });
     document.querySelector('body > div').addEventListener('click', (event) => {
+      event.stopImmediatePropagation()
       console.log('parent div');
     });
   </script>
